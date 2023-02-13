@@ -1,0 +1,12 @@
+{{- if .Values.configMap.create -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "colorapp.fullname" . }}
+  labels:
+    {{- include "colorapp.labels" . | nindent 4 }}
+data:
+  provider.config: |
+    Hello there
+    Here be some config
+{{- end }}
