@@ -8,7 +8,7 @@ image:
   repository: vsanjay/color-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0"
+  tag: "v1.0.2"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -65,8 +65,8 @@ resources:
   #   cpu: 100m
   #   memory: 128Mi
   requests:
-    cpu: 50m
-    memory: 50Mi
+    cpu: 250m
+    memory: 500Mi
 
 livenessProbe:
   failureThreshold: 2
