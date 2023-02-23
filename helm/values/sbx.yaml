@@ -5,4 +5,4 @@ serviceAccount:
   create: true
   # Annotations to add to the service account
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::697999275626:role/dpip-test-colorapp-role
+    eks.amazonaws.com/role-arn: arn:aws:iam::697999212345:role/blablablabla
