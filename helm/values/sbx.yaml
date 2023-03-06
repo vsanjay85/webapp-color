@@ -1,5 +1,7 @@
 replicaCount: 1
 
+environment: sbx
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true

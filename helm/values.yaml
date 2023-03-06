@@ -91,4 +91,7 @@ affinity: {}
 
 externalSecrets:
   secretsManagerStoreName: "aws-secretsmanager"
+  ssmParameterStoreName: "aws-parameterstore"
   dbSecretName: "dpip/bpm/db"
+  testParamName: ""
+  testJsonParamName: ""
