@@ -13,8 +13,9 @@ spec:
       {{- include "colorapp.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
       annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
+      {{- with .Values.podAnnotations }}
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
@@ -32,6 +33,8 @@ spec:
           # command: ["/bin/sleep"]
           # args: ["36000"]
           env:
+          - name: APP_COLOR
+            value: pink
           - name: DB_USERNAME
             valueFrom:
               secretKeyRef:
